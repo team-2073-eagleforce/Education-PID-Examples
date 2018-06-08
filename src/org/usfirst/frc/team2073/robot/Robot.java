@@ -15,9 +15,9 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Robot extends IterativeRobot {
 	TalonSRX talon = new TalonSRX(4);
-	double p = .1;
+	double p = .05;
 	double i = 0;
-	double d = .3;
+	double d = 0;
 	boolean started = false;
 	private PIDFUtil pidController = new PIDFUtil(p, i, d, 0, talon, 10 /* Interval in milliseconds */,
 			1 /* max output */);
